@@ -13,14 +13,16 @@
       font-size: large;
       padding-right: 10px;
       padding-left: 10px;
-      margin-right: 5px;
-      margin-left: 5px;
+      margin-right: 10px;
+      margin-left: 10px;
       width: 10px;
     }
 
     .player-buttons {
       background: black;
       flex-grow: 0;
+      display: flex;
+      flex-direction: row;
     }
 
     .video-container {
@@ -43,19 +45,32 @@
   <div class="js-video-container video-container"></div>
   <!-- Here can be placed player controls: play and volume buttons -->
   <div class="player-buttons">
-    <button class="js-play-button player-button">
-      <i class="fa fa-play" aria-hidden="true"></i>
-    </button>
-    <button class="js-pause-button player-button">
-      <i class="fa fa-pause" aria-hidden="true"></i>
-    </button>
-    <button class="js-mute-button player-button">
-      <i class="fa fa-volume-off" aria-hidden="true"></i>
-    </button>
-    <button class="js-volume-button player-button">
-      <i class="fa fa-volume-up" aria-hidden="true"></i>
-    </button>
-
+    <div>
+      <button class="js-play-button player-button">
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div>
+      <button class="js-pause-button player-button">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div>
+      <button class="js-mute-button player-button">
+        <i class="fa fa-volume-off" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div>
+      <button class="js-volume-button player-button">
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="video-container"></div>
+    <div>
+      <button class="js-fullscreen-button player-button">
+        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
 </div>
 
