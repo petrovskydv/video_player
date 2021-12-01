@@ -46,6 +46,17 @@
       margin-left: 5px
     }
 
+    .player .viewing-progressbar {
+      flex-grow: 1;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .player .viewing-progressbar .slider {
+      background-color: red;
+      height: 5px;
+    }
+
     .player .player-button {
       border-style: none;
       cursor: pointer;
@@ -93,9 +104,9 @@
       <div class="viewing-time">
         <span class="js-current-time"></span>
       </div>
-      <div class="viewing-progressbar screen">
-        <div class="js-progress" style="background-color: grey;">
-          <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
+      <div class="viewing-progressbar">
+        <div class="js-progress">
+          <div class="js-progress-slider slider"></div>
         </div>
       </div>
       <div class="video-duration">
