@@ -52,9 +52,16 @@
       margin-right: 10px;
     }
 
+    .player .progress {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
     .player .viewing-progressbar .slider {
       background-color: red;
       height: 5px;
+      border-radius: 2px;
     }
 
     .player .player-button {
@@ -116,8 +123,9 @@
         <span class="js-current-time"></span>
       </div>
       <div class="viewing-progressbar">
-        <div class="js-progress">
+        <div class="js-progress progress">
           <div class="js-progress-slider slider"></div>
+          <div class="dot"></div>
         </div>
       </div>
       <div class="video-duration">
@@ -128,9 +136,6 @@
       <button class="js-fullscreen-button player-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
-    </div>
-    <div>
-      <span class="dot"></span>
     </div>
   </div>
 
